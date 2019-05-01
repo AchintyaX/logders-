@@ -1,0 +1,404 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html><head>
+		<title>BIRDS & BEES – Refund and Cancellation Policy</title>
+	<meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="img/favicon.png" />
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.10.4.custom.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<script src="https://use.fontawesome.com/5a8a7bb461.js"></script>
+
+
+<script type="text/javascript">
+ $(document).ready(function(){
+		$( "#i_checkin" ).datepicker({
+					defaultDate: "+1w",
+					changeMonth: true,
+					numberOfMonths: 1,
+					minDate:'dd/mm/yyyy',
+					prevText: '<i class="fa fa-chevron-left"></i>',
+					nextText: '<i class="fa fa-chevron-right"></i>',
+					onClose: function( selectedDate ) {
+						$( "#i_checkout" ).datepicker( "option", "minDate", selectedDate );
+						
+					}
+		})
+		$( "#i_checkout" ).datepicker({
+			defaultDate: "+1w",
+			changeMonth: true,
+			numberOfMonths: 1,			
+			prevText: '<i class="fa fa-chevron-left"></i>',
+			nextText: '<i class="fa fa-chevron-right"></i>',
+			onClose: function( selectedDate ) {
+				$( "#i_checkin" ).datepicker( "option", "maxDate", selectedDate );
+			}
+		})
+})
+</script>
+</head>
+<body id="body">
+<header class="header_area" id="myHeader">
+	<div class="header-logo">
+		<div class="container">
+			<div class="col-md-12 hidden-xs">
+				<div class="col-md-6 head-logo">
+					<a href="/"><img src="img/logo.png" alt="Birds&Bees"></a>
+				</div>
+				<div class="col-md-6 venu-date">
+					<div class="left-countdown">
+						<div class="query-button">
+						    <a href="mailto:info@birdsandbees.co.in?Subject=Birds & Bees 2019 Enquiry&amp;Body=We are looking for --">info@birdsandbees.co.in</a>
+						</div>
+						<div class="phone-right">
+							<span><i class="fa fa-phone" aria-hidden="true"></i></span>
+								<div class="phone-cont">
+								<a href="tel:919818112531">&plus;919818112531</a><br>
+								<a href="tel:919810486649">&plus;919810486649</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+			<div class="col-md-12 navbar navbar-default " id="new-navbar">
+				<div class="container">
+                    <nav class="navbar-collapse circle" id='cssmenu'>
+						
+                        <ul class="nav navbar-nav navbar-right menu">
+                       
+                        <li class="smoth-scroll">
+                             <a data-hover="HOME" href="{% url 'home' %}" onClick="hideNav()" >HOME</a>
+                             
+                        </li>
+                         <li class="smoth-scroll">
+                             <a data-hover="ABOUT US" href="{% url 'about'%}" onClick="hideNav()">ABOUT US</a>
+                             
+                         </li>
+                         <li class="smoth-scroll">
+                         
+                            <a data-hover="Services " href="{% url 'services' %}" onClick="hideNav()">Services </a>
+                            
+                         </li>
+                         <li class="smoth-scroll">
+                             <a data-hover="Service" href="{% url 'refer_earn' %}" onClick="hideNav()">Refer and Earn&nbsp;</a>
+                         
+                          </li>
+                          <li class="smoth-scroll">
+                         
+                            <a data-hover="Privacy Policy" href="{% url 'policy' %}" onClick="hideNav()">Policy and Discounts </a>
+                            
+                         </li>
+                          
+                         <li class="smoth-scroll active">
+                             <a data-hover="CONTACT US" href="{% url 'contact' %}" onClick="hideNav()">CONTACT US</a>
+                             
+                         </li>
+                         
+                           </ul>
+                 </nav>
+                 <!-- END MENU AREA -->
+			</div>
+		</div>
+	</header>	
+	
+	<div id="policy" class="breadcrumb-banner">
+		<div class="container">
+			<div class="col-md-12">
+				<div aria-label="breadcrumb">
+					<h3>About Birds & Bees</h3>
+					<ol class="breadcrumb">
+						<li><a href="/">Home</a></li>
+						<li>About Us</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div id="privacy-accom_form" class="container-fluid no-padding">
+		<div class="container">
+			<div class="row" style="margin-right: 5px; margin-left: 5px;">
+				<div class="col-md-12 col-sm-12 col-xs-12">				
+					<div class="howwecan-right">
+						<div class="section-header">
+							<h2>Cancellation Policy</h2>				
+							<div class="line-sec"></div>
+							<p><i class="fa fa-check-square-o" aria-hidden="true"></i>In case of change / cancellation in bookings you need to inform us at least 30 days in advance. <br>
+
+<i class="fa fa-check-square-o" aria-hidden="true"></i>Cancellation in case less than 30 days and more than 15 days of the date of stay only 50% will be refunded. <br>
+
+<i class="fa fa-check-square-o" aria-hidden="true"></i>Cancellation of booking less 15 days no refund is applicable. <br>
+
+<i class="fa fa-check-square-o" aria-hidden="true"></i>After check-in, no refund is applicable in any case.
+</p>
+						</div>
+						<div class="privacy-sec">
+						<h3>REFUNDS</h3>
+						<div>
+						<p>On receipt of your cancellation of bookings via E-mail we will initiate a refund to your credit card.You will receive the credit within a certain amount of days, depending on your card issuer's policies.</p>
+						</div>
+					</div>
+				<div class=" bottom-disc">
+					<h3>DISCOUNT POLICY</h3>
+					<div class="seprator"></div>
+					<ul>
+					<li><i class="fa fa-check-square-o" aria-hidden="true"></i><font color="#0e666a" size="4"><strong>10% </strong></font>off on all stays over 9 nights.</li>
+					<li><i class="fa fa-check-square-o" aria-hidden="true"></i><font color="#0e666a" size="4"><strong>15% </strong></font> off on all stays over 20 nights.</li>
+					<li><i class="fa fa-check-square-o" aria-hidden="true"></i>(The above discounts are not applicable during peak season that is during the months of December, January and February. No cancellations will be accepted or would be made for this period)</li>
+					</ul>
+			</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		 <!--====== FOOTER Contact form End ======-->
+		<div id="go-top" style="display: block;"><i class="fa fa-angle-up fa-2x"></i></div>
+		<footer  class="footer_area">
+			<div class="container">
+					<div class="col-md-12 footer_row">
+						<div class="footer_contact">
+							<h3>Company Info</h3>
+							<p>2nd Floor, Lane No.2, Plot No.7, Saidul Ajaib, New Delhi-110030</p>
+								<span><a href="tel:919818112531">Mobile : &plus;919818112531</a>&nbsp;&nbsp;/&nbsp;<a href="tel:919810486649">&plus;919810486649</a>&nbsp;&nbsp; || &nbsp;&nbsp;<a href="mailto:info@birdsandbees.co.in?Subject=Birds & Bees 2019 Enquiry&amp;Body=We are looking for --">Email id : info@birdsandbees.co.in</a></span></div>
+							<div class="footer-line"></div>
+							<div class="footer-bottom">
+								<ul>
+								<li><a href="index.php">Home</a></li>
+								<li><a href="about.php">About US</a> </li>
+								<li> <a href="services.php">Services</a>  </li>
+								<li><a href="refund.php">Refer and Earn</a>  </li>
+							    <li><a href="policy.php">Policy and Discounts </a>  </li>
+								<li> <a href="contact.php">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+				<div class="footer-copy">
+				<p>&copy;2019  | Birds and Bees All Rights Reserved</p>
+				</div>
+		
+
+ <!--====== FOOTER AREA END ======-->
+<script type="text/javascript">
+	$(".form-footer .button").click(function(){  
+		var firstname = $("#i_guestname").val();
+		var email = $("#i_guestemail").val();
+		var telephone = $("#i_guestelephone").val();
+		var guesthome = $("#i_guesthome").val();
+		var hot_cat = $("#i_hot_cat").val();
+		var checkin = $("#i_checkin").val();
+		var checkout = $("#i_checkout").val();
+		var adults = $("#i_adults").val();
+		var txtother = $("#i_txtother").val();
+	 
+		var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,4}$/;
+		var mobilePattern = /^(\+\d{1,3}[- ]?)?\d{10,}$/;
+	 if(firstname ==""){
+		document.getElementById('i_guestname').style.backgroundColor = '#ffc6c6';
+       document.getElementById("i_guestname").focus();
+			return false;
+	}else{	
+
+	document.getElementById('i_guestname').style.backgroundColor = '#ccc';	 
+	}
+	
+	if(email ==""){
+	document.getElementById('i_guestemail').style.backgroundColor = '#ffc6c6';
+	document.getElementById("i_guestemail").focus();	
+	 return false;
+	}	else if(!emailPattern.test(email)){
+	document.getElementById('i_guestemail').style.backgroundColor = '#ffc6c6';
+        document.getElementById("i_guestemail").focus();
+	
+        return false;	
+	}else{	
+	document.getElementById('i_guestemail').style.backgroundColor= '#ccc';
+	}
+	
+	var len = telephone;
+	if(len.length < 5 )
+	{
+		document.getElementById('i_guestelephone').style.backgroundColor = '#ffc6c6';
+		document.getElementById("i_guestelephone").focus();
+		 return false;
+	}else if(!mobilePattern.test(telephone)){
+
+	document.getElementById('i_guestelephone').style.backgroundColor = '#ffc6c6';
+        document.getElementById("i_guestelephone").focus();
+
+        return false;	
+		}
+	else
+	{	
+		document.getElementById('i_guestelephone').style.backgroundColor = '#ccc'; 
+         }
+ 
+if(guesthome=="")
+	{
+		
+	 document.getElementById('i_guesthome').style.backgroundColor = '#ffc6c6';
+		document.getElementById("i_guesthome").focus();
+	 
+		 return false;
+  }
+  else
+	{	
+		document.getElementById('i_guesthome').style.backgroundColor = '#ccc'; 
+         }
+		 
+if(hot_cat=="")
+	{
+		
+	 document.getElementById('i_hot_cat').style.backgroundColor = '#ffc6c6';
+		document.getElementById("i_hot_cat").focus();
+	 
+		 return false;
+  }
+  else
+	{	
+		document.getElementById('i_hot_cat').style.backgroundColor = '#ccc'; 
+         }
+
+if(checkin ==""){
+		document.getElementById('i_checkin').style.backgroundColor = '#ffc6c6';
+       document.getElementById("i_checkin").focus();
+	return false;
+	}else{	
+
+	document.getElementById('i_checkin').style.borderColor = '#cccccc';	 
+	}	
+	if(checkout ==""){
+		document.getElementById('i_checkout').style.backgroundColor = '#ffc6c6';
+       document.getElementById("i_checkout").focus();
+	return false;
+	}else{	
+
+	document.getElementById('i_checkout').style.borderColor = '#cccccc';	 
+	}	
+	
+	if(adults=="")
+	{
+		
+	 document.getElementById('i_adults').style.backgroundColor = '#ffc6c6';
+		document.getElementById("i_adults").focus();
+	 
+		 return false;
+  }
+  else
+	{	
+		document.getElementById('i_adults').style.backgroundColor = '#ccc'; 
+         }
+if(txtother=="")
+	{
+		
+	 document.getElementById('i_txtother').style.backgroundColor = '#ffc6c6';
+		document.getElementById("i_txtother").focus();
+	 
+		 return false;
+  }
+  else
+	{	
+		document.getElementById('i_txtother').style.backgroundColor = '#ccc'; 
+         }
+	
+	
+});
+
+
+<!--====Validation for Contact Us End=====--->
+
+window.onscroll = function() {myFunction()};
+var header = document.getElementById("new-navbar");
+var sticky = header.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+function hideNav(){
+ if($(window).width()<=480){
+	$("ul.nav").hide();
+	}
+}
+
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("#new-navbar a").on('click', function(event) {
+	// Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+		// Store hash
+      var hash = this.hash;
+	// Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top-70
+      }, 2000, function(){
+		// Add hash (#) to URL when done scrolling (default click behavior)
+        //window.location.hash = hash;
+      });
+    } // End if
+  });
+ });
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+   if ($(window).width() < 480) {
+		  if (y > 1200) {
+			$('#go-top').fadeIn();
+		  } else {
+			$('#go-top').fadeOut();
+		  }
+   }else{
+		 if (y > 700) {
+			$('#go-top').fadeIn();
+		  } else {
+			$('#go-top').fadeOut();
+		  }
+   }   		  
+   
+});
+	
+  $('#go-top').click(function (){
+$("html,body").animate({
+scrollTop: 0
+}, 1000);
+return false;
+});
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+
+<script>
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 3000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+</script>
+</body></html>

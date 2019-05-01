@@ -1,0 +1,599 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html><head>
+		<title>Lodgers</title>
+		
+	<meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="images/favicon.png" />
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.10.4.custom.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+
+<script type="text/javascript">
+ $(document).ready(function(){
+		$( "#i_checkin" ).datepicker({
+					defaultDate: "+1w",
+					changeMonth: true,
+					numberOfMonths: 1,
+					minDate:'dd/mm/yyyy',
+					prevText: '<i class="fa fa-chevron-left"></i>',
+					nextText: '<i class="fa fa-chevron-right"></i>',
+					onClose: function( selectedDate ) {
+						$( "#i_checkout" ).datepicker( "option", "minDate", selectedDate );
+						
+					}
+		})
+		$( "#i_checkout" ).datepicker({
+			defaultDate: "+1w",
+			changeMonth: true,
+			numberOfMonths: 1,			
+			prevText: '<i class="fa fa-chevron-left"></i>',
+			nextText: '<i class="fa fa-chevron-right"></i>',
+			onClose: function( selectedDate ) {
+				$( "#i_checkin" ).datepicker( "option", "maxDate", selectedDate );
+			}
+		})
+})
+</script>
+</head>
+<body id="body">
+<header class="header_area" id="myHeader">
+	<div class="header-logo">
+		<div class="container">
+			<div class="col-md-12 hidden-xs">
+				<div class="col-md-6 head-logo">
+					<a href="/"><img src="img/logo.png" alt="Lodgers"></a>
+				</div>
+					<div class="col-md-6 venu-date">
+					<div class="left-countdown">
+						<div class="query-button">
+						
+							<a href="mailto:info@lodgers.co.in?Subject=Birds & Bees 2019 Enquiry&amp;Body=We are looking for --">info@lodgers.co.in</a>
+						</div>
+						<div class="phone-right">
+							<span><i class="fa fa-phone" aria-hidden="true"></i></span>
+								<div class="phone-cont">
+								<a href="tel:919818112531">&plus;919818112531</a><br>
+								<a href="tel:919810486649">&plus;919810486649</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+			<div class="col-md-12 navbar navbar-default " id="new-navbar">
+				<div class="container">
+				 	  <nav class="navbar-collapse circle" id='cssmenu'>
+						
+                        <nav class="navbar-collapse circle" id='cssmenu'>
+						
+                            <ul class="nav navbar-nav navbar-right menu">
+                           
+                            <li class="smoth-scroll">
+                                 <a data-hover="HOME" href="{% url 'home' %}" onClick="hideNav()" >HOME</a>
+                                 
+                            </li>
+                             <li class="smoth-scroll">
+                                 <a data-hover="ABOUT US" href="{% url 'about'%}" onClick="hideNav()">ABOUT US</a>
+                                 
+                             </li>
+                             <li class="smoth-scroll">
+                             
+                                <a data-hover="Services " href="{% url 'services' %}" onClick="hideNav()">Services </a>
+                                
+                             </li>
+                             <li class="smoth-scroll">
+                                 <a data-hover="Service" href="{% url 'refer_earn' %}" onClick="hideNav()">Refer and Earn&nbsp;</a>
+                             
+                              </li>
+                              <li class="smoth-scroll">
+                             
+                                <a data-hover="Privacy Policy" href="{% url 'policy' %}" onClick="hideNav()">Policy and Discounts </a>
+                                
+                             </li>
+                              
+                             <li class="smoth-scroll active">
+                                 <a data-hover="CONTACT US" href="{% url 'contact' %}" onClick="hideNav()">CONTACT US</a>
+                                 
+                             </li>
+                             
+                               </ul>
+                     </nav>
+                     <!-- END MENU AREA -->
+			</div>
+		</div>
+	</header>	
+	
+	<div id="facilitate" class="breadcrumb-banner">
+		<div class="container">
+			<div class="col-md-12">
+				<div aria-label="breadcrumb">
+					<h3>Services</h3>
+					<ol class="breadcrumb">
+						<li><a href="/">Home</a></li>
+						<li>Services</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="section_area-facilities">
+	    <div class="facilities-cont">
+	        <h1>Our Services </h1>
+					<div class="line-sec"></div>
+				<div class="facilities-content">
+					<div class="container">
+						    <div class="col-md-12">
+						<div class="col-md-5 facilities-para-log">
+						    <p>At <font color="#1bedf7"font="5">Lodgers &nbsp;</font>service apartments are ideal for people travelling alone, medical guests or small family and business executives and even for wedding guests. The décor of our service apartments is pleasing and make you feel at home.</p>
+					    </div>
+					    <div class="col-md-7 service-img">
+				            <a class="c-preview">
+                              <div class="c-preview__img"></div>
+                            </a>
+					    </div>
+					    </div>
+					</div>
+					</div>
+					<div class="container">
+					<div class="col-md-10 service-list">
+						<p>Our service apartments come with benchmarked standard of services :</p>
+						<ul>
+							<li><i class="fa fa-square" aria-hidden="true"></i>Comfortable rooms to refresh your body and soul.</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>Great deals for long stays.</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>Fully furnished and equipped kitchen.</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>Round the clock security.</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>High speed Wi-Fi internet.</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>AC Rooms (Heaters in Winters).</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>LCD / LED TV in all rooms with separate Tata Sky set top boxes.</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>Extra bed.</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>Wardrobes.</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>Waterpurifier.</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>Daily Newspaper Complimentary.</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>In house cab service.</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>24 hrs personal valet.</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>Same day laundry service. (Fully automatic washing machine).</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>Breakfast / Lunch/ Dinner service available on request.</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>30 minute drive from airport.</li>
+							<li><i class="fa fa-square" aria-hidden="true"></i>Centrally located with proximity to major shopping, entertainment and business cites, with easy access to major modes of transportation.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		 <!--====== FOOTER Contact form End ======-->
+		<div id="go-top" style="display: block;"><i class="fa fa-angle-up fa-2x"></i></div>
+	<footer  class="footer_area">
+			<div class="container">
+					<div class="col-md-12 footer_row">
+						<div class="footer_contact">
+							<h3>Company Info</h3>
+							<p>2nd Floor, Lane No.2, Plot No.7, Saidul Ajaib, New Delhi-110030</p>
+								<span><a href="tel:919818112531">Mobile : &plus;919818112531</a>&nbsp;&nbsp;/&nbsp;<a href="tel:919810486649">&plus;919810486649</a>&nbsp;&nbsp; || &nbsp;&nbsp;<a href="mailto:info@lodgers.co.in?Subject=Birds & Bees 2019 Enquiry&amp;Body=We are looking for --">Email id : info@lodgers.co.in</a></span></div>
+							<div class="footer-line"></div>
+							<div class="footer-bottom">
+								<ul>
+								<li><a href="index.php">Home</a></li>
+								<li><a href="about.php">About US</a> </li>
+								<li> <a href="services.php">Services</a>  </li>
+								<li><a href="refund.php">Refer and Earn</a>  </li>
+								<li><a href="policy.php">Policy and Discounts </a>  </li>
+								<li> <a href="contact.php">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+				<div class="footer-copy">
+				<p>&copy;2019  | LOdgers All Rights Reserved</p>
+				</div>
+		
+	
+<!--====== FOOTER AREA END ======-->
+<script type="text/javascript">
+	$(".form-footer .button").click(function(){  
+		var firstname = $("#i_guestname").val();
+		var email = $("#i_guestemail").val();
+		var telephone = $("#i_guestelephone").val();
+		var guesthome = $("#i_guesthome").val();
+		var hot_cat = $("#i_hot_cat").val();
+		var checkin = $("#i_checkin").val();
+		var checkout = $("#i_checkout").val();
+		var adults = $("#i_adults").val();
+		var txtother = $("#i_txtother").val();
+	 
+		var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,4}$/;
+		var mobilePattern = /^(\+\d{1,3}[- ]?)?\d{10,}$/;
+	 if(firstname ==""){
+		document.getElementById('i_guestname').style.backgroundColor = '#ffc6c6';
+       document.getElementById("i_guestname").focus();
+			return false;
+	}else{	
+
+	document.getElementById('i_guestname').style.backgroundColor = '#ccc';	 
+	}
+	
+	if(email ==""){
+	document.getElementById('i_guestemail').style.backgroundColor = '#ffc6c6';
+	document.getElementById("i_guestemail").focus();	
+	 return false;
+	}	else if(!emailPattern.test(email)){
+	document.getElementById('i_guestemail').style.backgroundColor = '#ffc6c6';
+        document.getElementById("i_guestemail").focus();
+	
+        return false;	
+	}else{	
+	document.getElementById('i_guestemail').style.backgroundColor= '#ccc';
+	}
+	
+	var len = telephone;
+	if(len.length < 5 )
+	{
+		document.getElementById('i_guestelephone').style.backgroundColor = '#ffc6c6';
+		document.getElementById("i_guestelephone").focus();
+		 return false;
+	}else if(!mobilePattern.test(telephone)){
+
+	document.getElementById('i_guestelephone').style.backgroundColor = '#ffc6c6';
+        document.getElementById("i_guestelephone").focus();
+
+        return false;	
+		}
+	else
+	{	
+		document.getElementById('i_guestelephone').style.backgroundColor = '#ccc'; 
+         }
+ 
+if(guesthome=="")
+	{
+		
+	 document.getElementById('i_guesthome').style.backgroundColor = '#ffc6c6';
+		document.getElementById("i_guesthome").focus();
+	 
+		 return false;
+  }
+  else
+	{	
+		document.getElementById('i_guesthome').style.backgroundColor = '#ccc'; 
+         }
+		 
+if(hot_cat=="")
+	{
+		
+	 document.getElementById('i_hot_cat').style.backgroundColor = '#ffc6c6';
+		document.getElementById("i_hot_cat").focus();
+	 
+		 return false;
+  }
+  else
+	{	
+		document.getElementById('i_hot_cat').style.backgroundColor = '#ccc'; 
+         }
+
+if(checkin ==""){
+		document.getElementById('i_checkin').style.backgroundColor = '#ffc6c6';
+       document.getElementById("i_checkin").focus();
+	return false;
+	}else{	
+
+	document.getElementById('i_checkin').style.borderColor = '#cccccc';	 
+	}	
+	if(checkout ==""){
+		document.getElementById('i_checkout').style.backgroundColor = '#ffc6c6';
+       document.getElementById("i_checkout").focus();
+	return false;
+	}else{	
+
+	document.getElementById('i_checkout').style.borderColor = '#cccccc';	 
+	}	
+	
+	if(adults=="")
+	{
+		
+	 document.getElementById('i_adults').style.backgroundColor = '#ffc6c6';
+		document.getElementById("i_adults").focus();
+	 
+		 return false;
+  }
+  else
+	{	
+		document.getElementById('i_adults').style.backgroundColor = '#ccc'; 
+         }
+if(txtother=="")
+	{
+		
+	 document.getElementById('i_txtother').style.backgroundColor = '#ffc6c6';
+		document.getElementById("i_txtother").focus();
+	 
+		 return false;
+  }
+  else
+	{	
+		document.getElementById('i_txtother').style.backgroundColor = '#ccc'; 
+         }
+	
+	
+});
+
+<!--====Validation for Contact Us=====--->
+function validateForm2(){
+	var firstname = $("#q_firstname").val();
+	 var email = $("#q_email").val();
+	 var telephone = $("#q_telephone").val();
+
+	  var Querytype = $("#q_querytype").val();
+ var query = $("#q_query").val();
+
+
+var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,4}$/;
+	
+	var mobilePattern = /^(\+\d{1,3}[- ]?)?\d{10,}$/;
+ 
+	 
+	 if(firstname ==""){
+		document.getElementById('q_firstname').style.backgroundColor = '#ffc6c6';
+       document.getElementById("q_firstname").focus();
+	return false;
+	}else{	
+
+	document.getElementById('q_firstname').style.backgroundColor = '#cccccc';	 
+	}
+	
+	var len = telephone;
+	if(len.length < 5)
+	{
+		document.getElementById('q_telephone').style.backgroundColor = '#ffc6c6';
+		document.getElementById("q_telephone").focus();
+		 return false;
+	}else if(!mobilePattern.test(telephone)){
+
+	document.getElementById('q_telephone').style.backgroundColor = '#ffc6c6';
+        document.getElementById("q_telephone").focus();
+
+        return false;	
+		}
+	else
+	{	
+		document.getElementById('q_telephone').style.backgroundColor = '#cccccc'; 
+         } 
+if(email ==""){
+	document.getElementById('q_email').style.backgroundColor = '#ffc6c6';
+document.getElementById("q_email").focus();	
+	 return false;
+	}	else if(!emailPattern.test(email)){
+	document.getElementById('q_email').style.backgroundColor = '#ffc6c6';
+        document.getElementById("q_email").focus();
+	
+        return false;	
+	}else{	
+	document.getElementById('q_email').style.backgroundColor = '#cccccc';
+	}
+	
+ if(Querytype ==""){
+		document.getElementById('q_querytype').style.backgroundColor = '#ffc6c6';
+       document.getElementById("q_querytype").focus();
+	return false;
+	}else{	
+
+	document.getElementById('q_querytype').style.backgroundColor = '#cccccc';	 
+	}
+		 
+   if(query ==""){
+		document.getElementById('q_query').style.backgroundColor = '#ffc6c6';
+       document.getElementById("q_query").focus();
+	return false;
+	}else{	
+
+	document.getElementById('q_query').style.backgroundColor = '#cccccc';	 
+	}
+
+}
+<!---------refer Frorm--------------->
+function validateForm3(){
+	var name = $("#c_name").val();
+	 var email = $("#c_email").val();
+	 var phone = $("#c_phone").val();
+	 var firstname = $("#d_name").val();
+	 var d_email = $("#d_email").val();
+	 var telephone = $("#d_phone").val();
+
+
+var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,4}$/;
+	
+	var mobilePattern = /^(\+\d{1,3}[- ]?)?\d{10,}$/;
+ 
+	 
+	 if(name ==""){
+		document.getElementById('c_name').style.backgroundColor = '#ffc6c6';
+       document.getElementById("c_name").focus();
+	return false;
+	}else{	
+
+	document.getElementById('c_name').style.backgroundColor = '#cccccc';	 
+	}
+	
+	if(email ==""){
+	document.getElementById('c_email').style.backgroundColor = '#ffc6c6';
+document.getElementById("c_email").focus();	
+	 return false;
+	}	else if(!emailPattern.test(email)){
+	document.getElementById('c_email').style.backgroundColor = '#ffc6c6';
+        document.getElementById("c_email").focus();
+	
+        return false;	
+	}else{	
+	document.getElementById('c_email').style.backgroundColor = '#cccccc';
+	}
+	
+	
+	var len = phone;
+	if(len.length < 5)
+	{
+		document.getElementById('c_phone').style.backgroundColor = '#ffc6c6';
+		document.getElementById("c_phone").focus();
+		 return false;
+	}else if(!mobilePattern.test(phone)){
+
+	document.getElementById('c_phone').style.backgroundColor = '#ffc6c6';
+        document.getElementById("c_phone").focus();
+
+        return false;	
+		}
+	else
+	{	
+		document.getElementById('c_phone').style.backgroundColor = '#cccccc'; 
+         } 
+		 
+		 
+		 
+		 if(firstname ==""){
+		document.getElementById('d_name').style.backgroundColor = '#ffc6c6';
+       document.getElementById("d_name").focus();
+	return false;
+	}else{	
+
+	document.getElementById('d_name').style.backgroundColor = '#cccccc';	 
+	}
+	
+	if(d_email ==""){
+	document.getElementById('d_email').style.backgroundColor = '#ffc6c6';
+document.getElementById("d_email").focus();	
+	 return false;
+	}	else if(!emailPattern.test(email)){
+	document.getElementById('d_email').style.backgroundColor = '#ffc6c6';
+        document.getElementById("d_email").focus();
+	
+        return false;	
+	}else{	
+	document.getElementById('d_email').style.backgroundColor = '#cccccc';
+	}
+	
+	
+	var len = telephone;
+	if(len.length < 5)
+	{
+		document.getElementById('d_phone').style.backgroundColor = '#ffc6c6';
+		document.getElementById("d_phone").focus();
+		 return false;
+	}else if(!mobilePattern.test(telephone)){
+
+	document.getElementById('d_phone').style.backgroundColor = '#ffc6c6';
+        document.getElementById("d_phone").focus();
+
+        return false;	
+		}
+	else
+	{	
+		document.getElementById('d_phone').style.backgroundColor = '#cccccc'; 
+         } 
+}
+
+
+<!--====Validation for Contact Us End=====--->
+
+window.onscroll = function() {myFunction()};
+var header = document.getElementById("new-navbar");
+var sticky = header.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+function hideNav(){
+ if($(window).width()<=480){
+	$("ul.nav").hide();
+	}
+}
+
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("#new-navbar a").on('click', function(event) {
+	// Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+		// Store hash
+      var hash = this.hash;
+	// Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top-70
+      }, 2000, function(){
+		// Add hash (#) to URL when done scrolling (default click behavior)
+        //window.location.hash = hash;
+      });
+    } // End if
+  });
+ });
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+   if ($(window).width() < 480) {
+		  if (y > 1200) {
+			$('#go-top').fadeIn();
+		  } else {
+			$('#go-top').fadeOut();
+		  }
+   }else{
+		 if (y > 700) {
+			$('#go-top').fadeIn();
+		  } else {
+			$('#go-top').fadeOut();
+		  }
+   }   		  
+   
+});
+	
+  $('#go-top').click(function (){
+$("html,body").animate({
+scrollTop: 0
+}, 1000);
+return false;
+});
+</script>
+
+
+<script>
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 3000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+</script>
+<script type="text/javascript">	
+			
+			Modernizr.load({
+				test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+				yep : ['http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','js/jquery.hoverfold.js'],
+				nope: 'css/fallback.css',
+				callback : function( url, result, key ) {
+						
+					if( url === 'js/jquery.hoverfold.js' ) {
+						$( '#grid' ).hoverfold();
+					}
+
+				}
+			});
+				
+		</script>
+</body></html>
