@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/x-icon" href="img/favicon.png" />
 	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="jquery-ui-1.10.4.custom.min.js"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery-ui-1.10.4.custom.min.js' %}"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/>
@@ -128,7 +128,7 @@
       </div>
     </div>
     <div class="item">
-      <img src="img/slider2.jpg">
+      <img src="{% static 'assets/slider2.jpg' %}">
       <div class="container">
         <div class="carousel-caption">
           
@@ -136,7 +136,7 @@
       </div>
     </div>
     <div class="item">
-      <img src="img/slide">
+      <img src="{% static 'assets/slider3.jpg' %}">
       <div class="container">
         <div class="carousel-caption">
           
@@ -144,7 +144,7 @@
       </div>
     </div>
 	<div class="item">
-      <img src="img/slider4.jpg">
+      <img src="{% static 'assets/slider4.jpg' %}">
       <div class="container">
         <div class="carousel-caption">
          </div>
@@ -163,7 +163,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 top-2">
-					<!--	<div class="dtable">
+						<div class="dtable">
 							<div class="smart-forms smart-container wrap-2">
                                <form method="post" action="/thank-you.php" id="apart-form1">
 									<div class="form-header header-primary">
@@ -250,7 +250,7 @@
 								</div>    
 						   </div>
 						</div>
-					</div> -->
+					</div> 
 				</div>	
 			</div>
 		</div>
