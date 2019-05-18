@@ -1034,7 +1034,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', end
     margin-top: 1.7em;
 }
 .query-button a {
-  background: #00e2ff;
+  background: #228B22;
     padding: 8.5px 1.5em;
     float: right;
     text-decoration: none;
@@ -1127,7 +1127,7 @@ nav.circle ul li a:hover:after {
   100% {
     width: 100%;
     height: 100%;
-    background: #00e2ff;
+    background: #228B22;
   }
 }
 
@@ -1146,7 +1146,7 @@ nav.circle ul li a:hover:after {
     border-radius: 100%;
   }
   100% {
-    background: #00e2ff;
+    background: #228B22;
     height: 5000%;
     width: 5000%;
     z-index: -1;
@@ -1343,7 +1343,7 @@ color: #004d64;
     width: 50px;
     margin: 0px auto;
     height: 8px;
-    border-bottom: 5px solid #00e2ff;
+    border-bottom: 5px solid #228B22;
 }
 
 /*============FORM_BANNER=================*/
@@ -1648,7 +1648,7 @@ ol.breadcrumb li+li:before {
   content: "/\00a0";
 }
 
-ol.breadcrumb li a {color:#00e2ff;}
+ol.breadcrumb li a {color:#228B22;}
 
 section.section_area-about {
     background: #ffffff;
@@ -1708,7 +1708,7 @@ section.section_area-about {
 
 .about-para-log i {
     padding-right: 10px;
-	color: #00e2ff;
+	color: #228B22;
 }
 
 /*======================Facilities Page CSS=========================*/
@@ -1724,7 +1724,7 @@ section.section_area-facilities {
 }
 .facilities-cont h2 {
     text-align: center;
-    color: #00e2ff;
+    color: #228B22;
 }
 
 .facilities-para-log {
@@ -1799,7 +1799,7 @@ padding: 13px 27px;
 		
 }
 .facilities-content h2 {
-    color: #00e2ff;
+    color: #228B22;
 }
 div#facilitate {
     background: url(img/Our-Features.jpg);
@@ -1810,7 +1810,7 @@ span.upper-icon i {
     margin: 0px auto;
     width: 65px;
     height: 65px;
-    background: #00e2ff;
+    background: #228B22;
     padding-top: 18px;
 	  transition: border-radius .7s;
 }
@@ -1839,7 +1839,7 @@ span.upper-icon {
     margin-top: 26px;
     font-size: 17px;
     font-weight: 600;
-    color: #00e2ff;
+    color: #228B22;
 }
 .feature-bg p {
      color: #12123d;
@@ -1856,7 +1856,7 @@ span.upper-icon {
 .bottom-disc h3 {
     font-size: 24px;
     font-weight: 600;
-    color: #00e2ff;
+    color: #228B22;
     font-family: raleway;
     /* text-align: center; */
 }
@@ -1865,10 +1865,10 @@ span.upper-icon {
     font-size: 16px;
     line-height: 30px;
     padding-left: 0em;
-    /* color: #00e2ff; */
+    /* color: #228B22; */
 }
 .bottom-disc i {
-    color: #00e2ff;
+    color: #228B22;
     font-size: 14px;
     padding-right: 8px;
 }
@@ -1883,13 +1883,13 @@ span.upper-icon {
     text-align: center;
     margin-top: 2em;
     color: #ffffff;
- /*   background: #00e2ff;
+ /*   background: #228B22;
     background: -moz-linear-gradient(top, #d8841ea 0%, #5bb3b7 100%);
     background: -webkit-linear-gradient(top, #0a6f73 0%, #33b7bd 50%, #1bedf7 100%);
     background: linear-gradient(to right, #0a6f73 0%, #33b7bd 50%, #1bedf7 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e2ff', endColorstr='#5bb3b7',GradientType=0 );*/
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#228B22', endColorstr='#5bb3b7',GradientType=0 );*/
     box-shadow: 0px 6px 12px -6px #000000a
-    background-image: -webkit-gradient(linear,right bottom,left top,from(#00e2ff),to(#08adb5));
+    background-image: -webkit-gradient(linear,right bottom,left top,from(#228B22),to(#08adb5));
     background-image: linear-gradient(to top left,#1bedf7,#0a5d61);
 }
 .service-list {
@@ -1899,7 +1899,7 @@ span.upper-icon {
 }
 .service-list p {
     font-size: 20px;
-    color: #00e2ff;
+    color: #228B22;
     font-weight: bold;
     text-align: center;
 }
@@ -1932,7 +1932,7 @@ span.upper-icon {
 .service-list i {
     font-size: 8px;
     margin-right: 7px;
-    color: #00e2ff;
+    color: #228B22;
     float: left;
     padding-top: 7px;
 }
@@ -1944,18 +1944,18 @@ div#about {
 }
 .about-cont h2 {
     text-align: center;
-       color: #00e2ff;
+       color: #228B22;
     font-family: raleway;
 }
 .about-conf {
  float: left;
 }
 .facilities-cont h1 {
-    color: #00e2ff;
+    color: #228B22;
         text-align: center;
 }
 .testmonial_content h3 {
-    color: #00e2ff;
+    color: #228B22;
 	    font-size: 30px;
 }
 .about-conf h3 {
@@ -1973,7 +1973,7 @@ div#about {
     width: 100px;
        margin-top: 3px;
     float: left;
-    border-bottom: 3px solid #00e2ff;
+    border-bottom: 3px solid #228B22;
 }
 .about-para-cont {
     margin-top: 28px;
@@ -2000,7 +2000,7 @@ div#about {
     float: left;
 }
 .about-conf h1 {
-color: #00e2ff;
+color: #228B22;
     text-align: left;
     font-family: 'Raleway';
    font-size: 24px;
@@ -2015,7 +2015,7 @@ color: #00e2ff;
     max-width: 100px;
     margin: 0px auto;
     margin-top: 20px;
-     border-bottom: 3px solid #00e2ff;
+     border-bottom: 3px solid #228B22;
 }
 .about-conf p
 {
@@ -2128,10 +2128,10 @@ section#apartment {
 }
 .filter-button{
     font-size: 18px;
-    border: 2px solid #00e2ff;
+    border: 2px solid #228B22;
 	padding:5px 10px;
     text-align: center;
-    color: #00e2ff;
+    color: #228B22;
     margin-bottom: 30px;
 	background:transparent;
 }
@@ -2139,7 +2139,7 @@ section#apartment {
 .filter-button:focus,
 .filter-button.active{
     color: #ffffff;
-    background-color:#00e2ff;
+    background-color:#228B22;
 	outline:none;
 }
 .gallery_product{
@@ -2180,7 +2180,7 @@ section#apartment {
     margin-top: 1em;
     font-size: 30px;
     font-weight: 600;
-	color: #00e2ff;
+	color: #228B22;
 }
 .hotel-sight {
     width: 100%;
@@ -2294,7 +2294,7 @@ section#apartment {
     border-radius: 65px;
     padding: 10px;
     color: #fff;
-    background-color: #00e2ff;
+    background-color: #228B22;
     opacity: .9;
     border: 1px solid #000;
 }
@@ -2302,7 +2302,7 @@ section#apartment {
 
 .apartment-info {
     padding-top: 25px;
-    background: #00e2ff;
+    background: #228B22;
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 3em;
@@ -2453,7 +2453,7 @@ margin-bottom: 4em;
 }
 .refund-cont h2 {
     text-align: center;
-    color: #00e2ff;
+    color: #228B22;
     font-family: raleway;
     font-weight: 600;
 }
@@ -2477,7 +2477,7 @@ margin-bottom: 4em;
 	    border-right: 1px dotted #fff;
 }
 form.refund-form {
-    background: #00e2ff;
+    background: #228B22;
     width: 100%;
     float: left;
     padding: 10px 16px;
@@ -2516,7 +2516,7 @@ form.refund-form {
     font-size: 15px;
     font-weight: 600;
     margin-top: 1em;
-    border: 1px solid #00e2ff;
+    border: 1px solid #228B22;
     color: #12123d;
     background: #03cfd8;
 }
@@ -2535,7 +2535,7 @@ form.refund-form {
     font-size: 22px;
     font-family: raleway;
     font-weight: 600;
-    color: #00e2ff;
+    color: #228B22;
 }
 .social-icon ul {
     list-style: none;
@@ -2573,7 +2573,7 @@ form.refund-form {
 
 .col-md-12.contact h2 {
     text-align: center;
-    color: #00e2ff;
+    color: #228B22;
 }
 .contact-cont {
     width: 100%;
@@ -2689,7 +2689,7 @@ textarea#q_query {
     font-size: 15px;
     font-weight: 600;
     margin-top: 1em;
-    border: 1px solid #00e2ff;
+    border: 1px solid #228B22;
     color: #12123d;
     background: #03cfd8;
 }
@@ -2738,7 +2738,7 @@ img.venu-icon {
     /* color: #ddd !important; */
     font-family: raleway;
 	    background: #ffffff;
-    border: 1px solid #00e2ff;
+    border: 1px solid #228B22;
 
 }
 #footer-form .section.colaja select {
@@ -2751,7 +2751,7 @@ img.venu-icon {
     padding: 8px 5px;
     width: 100%;
     cursor: pointer;
-    border: 1px solid #00e2ff;
+    border: 1px solid #228B22;
 }
 #footer-form .field-icon .fa {
     position: relative;
@@ -2777,7 +2777,7 @@ img.venu-icon {
     height: 130px;
     width: 100%;
 	background-color: #ffffff !important;
-    border: 1px solid #00e2ff;
+    border: 1px solid #228B22;
 }
 #footer-form .form-footer
 {
@@ -2973,11 +2973,11 @@ div#privacy-accom_form {
 .howwecan-right {
     width: 100%;
     float: left;
-    /* background: #00e2ff; */
+    /* background: #228B22; */
       padding: 2em 6em;
 }
 .section-header h2 {
-    color: #00e2ff;
+    color: #228B22;
     font-family: raleway;
     text-align: center;
         font-weight: 600;
@@ -2995,8 +2995,8 @@ div#privacy-accom_form {
 }
 .privacy-sec h3 {
     font-family: raleway;
-    border-bottom: 1px solid #00e2ff;
-    color: #00e2ff;
+    border-bottom: 1px solid #228B22;
+    color: #228B22;
     padding-bottom: 7px;
 }
 .privacy-sec p {
@@ -3007,7 +3007,7 @@ div#privacy-accom_form {
 }
 .section-header i {
     padding-right: 10px;
-      color: #00e2ff;
+      color: #228B22;
     font-size: 14px;
 }
 /*===========================Footer Arear=====================*/
@@ -3207,7 +3207,7 @@ margin-bottom: 1em;
     margin-top: 3px;
     margin: 0px auto;
     float: none;
-    border-bottom: 3px solid #00e2ff;
+    border-bottom: 3px solid #228B22;
 }
 .howwecan-right
 {
@@ -3391,7 +3391,7 @@ section#apartment {
 }
 .apartment-info {
     padding: 25px 0px;
-    background: #00e2ff;
+    background: #228B22;
     float: left;
     text-align: center;
     width: 100%;
@@ -3544,7 +3544,7 @@ ul.schedul li.active, ul.schedul li a:hover {
     background: #ffffff;
     padding: 13px 20px;
     color: #ffffff;
-    background: #00e2ff;
+    background: #228B22;
     margin-bottom: 13px;
 }
 .about-para-log i {
@@ -4084,7 +4084,7 @@ ul.dropdown-menu.open li a {
     margin: 0px 10px;
     font-weight: 600;
     letter-spacing: 2px;
-    border-bottom: 5px solid #00e2ff;
+    border-bottom: 5px solid #228B22;
 }
 /* li.smoth-scroll.active a {
     padding: 1.5em .5em 1.5em 2.5em !important;
